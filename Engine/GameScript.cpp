@@ -7,3 +7,7 @@
 //
 
 #include "GameScript.hpp"
+
+GameScript::GameScript()
+{
+}

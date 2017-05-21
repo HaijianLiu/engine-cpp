@@ -8,6 +8,5 @@
 
 #include "Engine.hpp"
 
-void Engine::Update (){
-  std::cout << "Engine Update() is called" << '\n';
-}
+Engine::Engine(){}
+Engine::~Engine(){}

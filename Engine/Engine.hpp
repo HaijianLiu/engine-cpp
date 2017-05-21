@@ -11,11 +11,19 @@
 
 #include <iostream>
 #include "Input.hpp"
+#include "FSM.hpp"
 
 class Engine{
 public:
+  Engine();
+  ~Engine();
+
+  void Update (){
+    std::cout << "Engine Update() is called" << '\n';
+  }
+
   Input input;
-  void Update();
+  FSM fsm;
 };
 
 #endif /* Engine_hpp */

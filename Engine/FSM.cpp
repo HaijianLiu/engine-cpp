@@ -8,4 +8,11 @@
 
 #include "FSM.hpp"
 
+
 FSM::FSM(){};
+
+void FSM::Load(std::string name){
+  std::cout << "Load " << name << '\n';
+  scriptName = name;
+  std::cout << "scriptName " << scriptName << '\n';
+}

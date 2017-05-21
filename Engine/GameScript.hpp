@@ -14,12 +14,16 @@
 
 class GameScript: public Engine{
 public:
+  GameScript();
+
   // Update is called once per frame
   void Update (){
     std::cout << "Game Update() is called" << '\n';
-    if (input.WaitKey('a')) {
-      std::cout << "WaitKey() returns 'a'" << '\n';
-    }
+
+    if (input.WaitKey("a")) {
+      std::cout << "WaitKey() returns a" << '\n';
+      fsm.Load("GameScript");
+    }else fsm.Load("Engine");
   }
 };
 

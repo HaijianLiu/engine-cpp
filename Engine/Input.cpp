@@ -10,8 +10,8 @@
 
 Input::Input(){};
 
-bool Input::WaitKey(char name){
-  char key;
+bool Input::WaitKey(std::string name){
+  std::string key;
   std::cin >> key;
   if (name == key) {
     return true;

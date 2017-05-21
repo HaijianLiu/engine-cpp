@@ -7,24 +7,34 @@
 //
 
 #include <iostream>
-#include "GameScript.hpp"
 #include "Engine.hpp"
-#include "FSM.hpp"
+
+#include "GameScript.hpp"
 
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
 
-    FSM* fsm = new FSM();
+    // FSM* fsm = new FSM();
 
-    GameScript* gameScript = new GameScript();
+    // fsm->Add(new GameScript());
+    GameScript gameScript;
+
+    // FSM* fsm = new FSM();
+
+    // Engine engine(fsm);
 
     while (true) {
-      gameScript->Update();
+      // std::cout << "fsm->scriptName" <<  fsm->scriptName '\n';
+      gameScript.Update();
+      // std::cout << "state " << state << '\n';
+      // if (state == "GameScript") {
+      //   gameScript.Update();
+      // }else engine.Update();
     }
 
-    delete fsm;
+    // delete fsm;
 
     return 0;
 }
