@@ -10,9 +10,11 @@
 #define Engine_hpp
 
 #include <iostream>
+#include "Input.hpp"
 
 class Engine{
 public:
+  Input input;
   void Update();
 };
 

@@ -9,6 +9,12 @@
 #ifndef Input_hpp
 #define Input_hpp
 
-#include <stdio.h>
+#include <iostream>
+
+class Input{
+public:
+  Input();
+  bool WaitKey(char);
+};
 
 #endif /* Input_hpp */

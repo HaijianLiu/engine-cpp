@@ -17,6 +17,9 @@ public:
   // Update is called once per frame
   void Update (){
     std::cout << "Game Update() is called" << '\n';
+    if (input.WaitKey('a')) {
+      std::cout << "WaitKey() returns 'a'" << '\n';
+    }
   }
 };
 
