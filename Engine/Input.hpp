@@ -3,7 +3,7 @@
 //  Engine
 //
 //  Created by haijian on 2017/05/21.
-//  Copyright © 2017年 haijian. All rights reserved.
+//  Copyright © 2017 haijian. All rights reserved.
 //
 
 #ifndef Input_hpp
@@ -14,7 +14,7 @@
 class Input{
 public:
   Input();
-  bool WaitKey(std::string);
+  bool static WaitKey(std::string);
 };
 
 #endif /* Input_hpp */

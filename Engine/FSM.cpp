@@ -2,17 +2,18 @@
 //  FSM.cpp
 //  Engine
 //
-//  Created by haijian on 2017/05/21.
-//  Copyright © 2017年 haijian. All rights reserved.
+//  Created by haijian on 2017/05/25.
+//  Copyright © 2017 haijian. All rights reserved.
 //
 
 #include "FSM.hpp"
 
 
-FSM::FSM(){};
+FSM::FSM(){
+  std::cout << "FSM constructor is called" << '\n';
+  // fsm.push_back();
+}
 
-void FSM::Load(std::string name){
-  std::cout << "Load " << name << '\n';
-  scriptName = name;
-  std::cout << "scriptName " << scriptName << '\n';
+FSM::~FSM(){
+  std::cout << "FSM deconstructor is called" << '\n';
 }

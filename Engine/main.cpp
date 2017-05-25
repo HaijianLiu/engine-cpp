@@ -9,32 +9,13 @@
 #include <iostream>
 #include "Engine.hpp"
 
-#include "GameScript.hpp"
-
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
 
-    // FSM* fsm = new FSM();
 
-    // fsm->Add(new GameScript());
-    GameScript gameScript;
+  while (true) {
+    std::cout << "main while is called!" << '\n';
+  }
 
-    // FSM* fsm = new FSM();
-
-    // Engine engine(fsm);
-
-    while (true) {
-      // std::cout << "fsm->scriptName" <<  fsm->scriptName '\n';
-      gameScript.Update();
-      // std::cout << "state " << state << '\n';
-      // if (state == "GameScript") {
-      //   gameScript.Update();
-      // }else engine.Update();
-    }
-
-    // delete fsm;
-
-    return 0;
+  return 0;
 }
