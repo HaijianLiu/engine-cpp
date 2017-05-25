@@ -11,9 +11,8 @@
 
 FSM::FSM(){
   std::cout << "FSM constructor is called" << '\n';
-  // fsm.push_back();
 }
 
 FSM::~FSM(){
-  std::cout << "FSM deconstructor is called" << '\n';
+  std::cout << "FSM destructor is called" << '\n';
 }

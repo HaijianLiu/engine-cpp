@@ -10,12 +10,19 @@
 #include "Engine.hpp"
 
 
+
 int main(int argc, const char * argv[]) {
 
+  FSM* fsm = new FSM();
 
-  while (true) {
-    std::cout << "main while is called!" << '\n';
-  }
+
+  // while (true) {
+  // }
+
+  std::cout << "main while is called!" << '\n';
+
+
+  delete fsm;
 
   return 0;
 }

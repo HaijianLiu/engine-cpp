@@ -11,7 +11,7 @@
 
 #include <iostream>
 
-#include "Entity.hpp"
+#include "FSM.hpp"
 #include "Input.hpp"
 
 #endif /* Engine_hpp */

@@ -19,8 +19,6 @@ class FSM{
 public:
   FSM();
   ~FSM();
-  Entity* entity = new Entity;
-  std::vector<Entity*> fsm;
 };
 
 #endif /* FSM_hpp */
