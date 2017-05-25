@@ -13,10 +13,10 @@ Input::Input(){
 };
 
 
-bool Input::WaitKey(std::string name){
+bool Input::WaitButtonDown(std::string buttonName){
   std::string key;
   std::cin >> key;
-  if (name == key) {
+  if (buttonName == key) {
     return true;
   }else return false;
 }

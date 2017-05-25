@@ -13,7 +13,7 @@ class User2 : public Entity{
 public:
   void Update(){
     std::cout << "User2 Update is called!" << '\n';
-    if (Input::WaitKey("a")) {
+    if (Input::WaitButtonDown("a")) {
       i ++;
     }
     std::cout << "User2 : i = " << i << '\n';
