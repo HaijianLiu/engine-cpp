@@ -15,4 +15,17 @@ FSM::FSM(){
 
 FSM::~FSM(){
   std::cout << "FSM destructor is called" << '\n';
+  for (std::map<std::string, Entity*>::iterator iter = entityMap.begin();iter != entityMap.end(); iter++) {
+    delete entityMap[iter->first];
+  }
+}
+
+void FSM::Update(){
+  for (std::map<std::string, Entity*>::iterator iter = entityMap.begin();iter != entityMap.end(); iter++) {
+    entityMap[iter->first]->Update();
+  }
+}
+
+void FSM::InitFSM(std::string name,Entity* entity){
+  entityMap[name] = entity;
 }

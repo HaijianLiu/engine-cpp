@@ -10,15 +10,21 @@
 #define FSM_hpp
 
 #include <iostream>
-#include <vector>
+#include <map>
 
 #include "Entity.hpp"
+
 
 
 class FSM{
 public:
   FSM();
   ~FSM();
+  void InitFSM(std::string,Entity*);
+  void Update();
+
+private:
+  std::map<std::string, Entity*> entityMap;
 };
 
 #endif /* FSM_hpp */

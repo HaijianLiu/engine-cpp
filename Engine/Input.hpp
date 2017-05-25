@@ -14,7 +14,7 @@
 class Input{
 public:
   Input();
-  bool static WaitKey(std::string);
+  static bool WaitKey(std::string);
 };
 
 #endif /* Input_hpp */
